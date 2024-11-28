@@ -60,6 +60,6 @@ public class Type99 extends Robot
 	 */
 	public void onHitWall(HitWallEvent e) {
 		// Replace the next line with any behavior you would like
-		back(20);
+		ahead(50);
 	}	
 }
