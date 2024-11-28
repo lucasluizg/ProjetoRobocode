@@ -44,22 +44,13 @@ public class Type99 extends Robot
 	 * onHitByBullet: What to do when you're hit by a bullet
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
-		// demonstrate feature of debugging properties on RobotDialog
-		setDebugProperty("lastHitBy", e.getName() + " with power of bullet " + e.getPower() + " at time " + getTime());
-
-		// show how to remove debugging property
-		setDebugProperty("lastScannedRobot", null);
-
-		// gebugging by painting to battle view
-		Graphics2D g = getGraphics();
-
-		g.setColor(Color.orange);
-		g.drawOval((int) (getX() - 55), (int) (getY() - 55), 110, 110);
-		g.drawOval((int) (getX() - 56), (int) (getY() - 56), 112, 112);
-		g.drawOval((int) (getX() - 59), (int) (getY() - 59), 118, 118);
-		g.drawOval((int) (getX() - 60), (int) (getY() - 60), 120, 120);
-
-		turnLeft(90 - e.getBearing());
+		// If he's in front of us, set back up a bit.
+		if (e.getBearing() > -90 && e.getBearing() < 90) {
+			back(100);
+		} // else he's in back of us, so set ahead a bit.
+		else {
+			ahead(100);
+		}
 	}
 	
 	/**
