@@ -26,9 +26,9 @@ public class Type99 extends Robot
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
-			turnRight(100);
+			turnRight(200);
 			turnGunRight(360);
-			turnLeft(100);
+			turnLeft(200);
 			turnGunLeft(360);
 			back(360);
 		}
