@@ -27,10 +27,10 @@ public class Type99 extends Robot
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
 			turnRight(100);
-			turnGunRight(360);
+			turnGunRight(180);
 			turnLeft(100);
-			turnGunLeft(360);
-			back(360);
+			turnGunLeft(180);
+			back(180);
 		}
 	}
 
@@ -40,6 +40,12 @@ public class Type99 extends Robot
 	public void onScannedRobot(ScannedRobotEvent e) {
 		// Replace the next line with any behavior you would like
 		fire(1);
+		ahead(100);
+		turnRight(100);
+		turnGunRight(180);
+		turnLeft(100);
+		turnGunLeft(180);
+		back(180);
 	}
 
 	/**
@@ -60,6 +66,8 @@ public class Type99 extends Robot
 	 */
 	public void onHitWall(HitWallEvent e) {
 		// Replace the next line with any behavior you would like
-		ahead(50);
+		ahead(100);
+		turnGunRight(180);
+		turnGunLeft(180);
 	}	
 }
