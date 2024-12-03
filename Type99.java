@@ -26,11 +26,13 @@ public class Type99 extends Robot
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
-			turnRight(100);
-			turnGunRight(180);
-			turnLeft(100);
-			turnGunLeft(180);
-			back(180);
+			turnGunRight(90);
+			turnRight(180);
+			ahead(100);
+			turnGunLeft(90);
+			turnLeft(180);
+			ahead(100);
+			back(100);
 		}
 	}
 
@@ -41,11 +43,13 @@ public class Type99 extends Robot
 		// Replace the next line with any behavior you would like
 		fire(1);
 		ahead(100);
-		turnRight(100);
-		turnGunRight(180);
-		turnLeft(100);
-		turnGunLeft(180);
-		back(180);
+		turnGunRight(90);
+		turnRight(180);
+		ahead(100);
+		turnGunLeft(90);
+		turnLeft(180);
+		ahead(100);
+		back(100);
 	}
 
 	/**
@@ -66,8 +70,9 @@ public class Type99 extends Robot
 	 */
 	public void onHitWall(HitWallEvent e) {
 		// Replace the next line with any behavior you would like
-		ahead(100);
+		ahead(20);
 		turnGunRight(180);
 		turnGunLeft(180);
+		back(20);
 	}	
 }
