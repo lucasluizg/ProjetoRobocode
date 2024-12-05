@@ -26,11 +26,9 @@ public class Type99 extends Robot
 		while(true) {
 			// Replace the next 4 lines with any behavior you would like
 			ahead(100);
-			turnGunRight(90);
-			turnRight(180);
+			turnRight(90);
 			ahead(100);
-			turnGunLeft(90);
-			turnLeft(180);
+			turnLeft(90);
 			ahead(100);
 			back(100);
 		}
@@ -43,11 +41,9 @@ public class Type99 extends Robot
 		// Replace the next line with any behavior you would like
 		fire(1);
 		ahead(100);
-		turnGunRight(90);
-		turnRight(180);
+		turnRight(90);
 		ahead(100);
-		turnGunLeft(90);
-		turnLeft(180);
+		turnLeft(90);
 		ahead(100);
 		back(100);
 	}
@@ -56,13 +52,8 @@ public class Type99 extends Robot
 	 * onHitByBullet: What to do when you're hit by a bullet
 	 */
 	public void onHitByBullet(HitByBulletEvent e) {
-		// If he's in front of us, set back up a bit.
-		if (e.getBearing() > -90 && e.getBearing() < 90) {
-			back(100);
-		} // else he's in back of us, so set ahead a bit.
-		else {
-			ahead(100);
-		}
+		back(50);
+		ahead(50);
 	}
 	
 	/**
@@ -70,9 +61,5 @@ public class Type99 extends Robot
 	 */
 	public void onHitWall(HitWallEvent e) {
 		// Replace the next line with any behavior you would like
-		ahead(20);
-		turnGunRight(180);
-		turnGunLeft(180);
-		back(20);
 	}	
 }
