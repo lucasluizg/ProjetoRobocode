@@ -1,4 +1,4 @@
-package China;
+package tanque;
 import robocode.*;
 import robocode.HitByBulletEvent;
 // Código padrão
@@ -9,7 +9,7 @@ import robocode.HitByBulletEvent;
 /**
  * Type99 - a robot by (your name here)
  */
-public class Type99 extends Robot
+public class tanque extends Robot
 {
 	/**
 	 * run: Type99's default behavior
