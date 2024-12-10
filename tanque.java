@@ -7,7 +7,7 @@ import robocode.HitByBulletEvent;
 // API help : https://robocode.sourceforge.io/docs/robocode/robocode/Robot.html
 
 /**
- * Type99 - a robot by (your name here)
+ * Tanque - a robot by (your name here)
  */
 public class tanque extends Robot
 {
