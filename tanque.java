@@ -9,7 +9,7 @@ import robocode.HitByBulletEvent;
 /**
  * Tanque - a robot by (your name here)
  */
-public class tanque extends Robot
+public class Tanque extends Robot
 {
 	/**
 	 * run: Type99's default behavior
